@@ -1,0 +1,10 @@
+#!/bin/sh
+'''exec' "/home/aicha/Documents/DIC 2 TABAARA K'ALLAHH/1 st semester/Base de donnÃ©es avancÃ©es/Platefome d evaluation intelligente/code/.venv/bin/python3" "$0" "$@"
+' '''
+# -*- coding: utf-8 -*-
+import re
+import sys
+from dotenv.__main__ import cli
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw|\.exe)?$', '', sys.argv[0])
+    sys.exit(cli())
